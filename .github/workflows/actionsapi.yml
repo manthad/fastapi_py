@@ -32,3 +32,4 @@ jobs:
           file: fastapi/Dockerfile
           push: true
           tags: manthad/fastapi-demo:latest
+          
