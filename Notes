@@ -1,0 +1,48 @@
+API is a service that allows different software applications to communicate with each other. It defines a set of rules and protocols for how these applications can interact. It is the one which takes the request from the client and sends to the server and the response from server to the client.
+FastAPI is a framework is built on Starlette and Pydantic.
+Fast API is just like a code but the tool to run the api is the UVICORN (web server) so thats why we need to run it or reload it when code changes are done
+Starlette (web framework) is like the engine behind FastAPI. It handles all the web request/response stuff under the hood.
+FastAPI is the app you see (user interface).
+	•	Starlette is the system (delivery person, routes, traffic handler) that makes the app work fast and reliably.
+Pydantic handles data validation and data types in FastAPI.
+	•	It ensures the data you send or receive is correct and structured.  
+u have something called BaseModel which also describes he structure or format   
+
+
+Here the thing is when you download FastAPI it will already have the starlette and pydantic. SO we need to install uvicorn which is a web server explicitly
+
+Swagger Docs is an interactive web page that shows:
+    .  All data/ documentation where some developer will understand to build the app where he 
+       writes all the conditions for a particualr field or etc. Easy human readability
+    . In general we can get the output from the url itself but if we have this docs which is a UI will help to select or provide the options or data in an easy way who doesnt understand coding much
+    . BDW for get we can use URL but for other things its docs approach as it is not supported by the browser. So we can see the o/p only on the docs
+    
+
+
+Schema is like a blueprint or a form that defines what kind of data your API should accept or return
+(ex: name, age , account no if went to bank)      
+    .   It validates input data: catches errors before they cause problems.
+	•	It documents your API: others know what kind of data to send.
+OPENAPI is a standard way of descriing how an API should look like (how RESTAPI should be)   (It is just telling what API need need to have or what it can do like get, post. So baased on those things only we can create API)
+    •	FastAPI is the tool you use to build the API.
+	•	OpenAPI is the rulebook that describes what the API does.
+
+ENUM - Enumeration - to limit values to a specific list so that to enter valid data. Can be used for both path and query parameters actually used when the input values are more than 1
+
+PARSING - analyzing and understanding a piece of data so that a computer program can make sense of it.
+
+QUERY - eventhough it seems optional but if we have it instead of getting all the data we can just mention fo specific
+        like category = books, then only that data will come. Also for updating we need to use Query only
+
+ANNOTATED - inside annotated we cannot use query with default but can use outside. even though using query it will make more clear by creating a seperation.
+It is used when we need to provide extra rules for query parameter
+
+IDEMPOTENT - means eventhough when performed a work several times will result only once. like updating and deleting methods.
+
+
+END of the day the main goal is to whether the data we are providing is correct or not and how to test them or provide conditions to the data that provided by the client
+
+
+Fiexwed part i the url is called SLUG
+
+Stateless - means that each request from the client contains all the information the server needs to fulfill that request. The server does not store any client context between requests.
