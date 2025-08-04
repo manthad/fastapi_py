@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - test
-deploy:
+jobs:      
+  deploy:
     runs-on: ubuntu-latest # or your self-hosted runner
     needs: build-and-push
     steps:
