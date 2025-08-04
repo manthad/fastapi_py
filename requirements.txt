@@ -1,0 +1,6 @@
+
+fastapi==0.116.1
+PyPDF2==3.0.1
+pyperclip==1.9.0
+starlette==0.47.2
+uvicorn==0.35.0
